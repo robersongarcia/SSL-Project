@@ -1,0 +1,14 @@
+{
+  "name": "SSL-Project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/robersongarcia/SSL-Project.git",
+  "author": "Roberson Garcia <roberson.gar12@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
