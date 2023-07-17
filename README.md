@@ -7,7 +7,7 @@
             -sha256 -days 356 \
             -nodes \
             -newkey rsa:2048 \
-            -subj "/CN=localhost/C=VE/L=Ciudad Guayana" \
+            -subj "/CN=robersong/C=VE/L=Ciudad Guayana" \
             -keyout rootCA.key -out rootCA.crt
 ```
 
@@ -32,9 +32,9 @@ distinguished_name = dn
 C = VE
 ST = Bolivar
 L = Ciudad Guayana
-O = localhost
-OU = localhost
-CN = localhost
+O = robersoncorp
+OU = it
+CN = robersong
 
 [ req_ext ]
 subjectAltName = @alt_names
@@ -79,3 +79,13 @@ openssl x509 -req \
     -sha256 -extfile cert.conf
 ```
 Generates the ssl certificate using rootCA.crt and the rootCA.key
+
+Install the Self-Signed Certificate
+Once you have generated the self-signed certificate, the next step is to install it on your local machine. The following are the steps you can take to install the certificate:
+
+1. Open Chrome and navigate to chrome://settings/certificates.
+2. Click on the “Authorities” tab.
+3. Click on the “Import” button.
+4. Select the localhost.crt file you generated in Step 1.
+5. Check the “Trust this certificate for identifying websites” option.
+6. Click on the “OK” button.
