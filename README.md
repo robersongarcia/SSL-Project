@@ -80,7 +80,7 @@ openssl x509 -req \
 ```
 Generates the ssl certificate using rootCA.crt and the rootCA.key
 
-Install the Self-Signed Certificate
+Install the Self-Signed Certificate  rootCA.crt
 Once you have generated the self-signed certificate, the next step is to install it on your local machine. The following are the steps you can take to install the certificate:
 
 1. Open Chrome and navigate to chrome://settings/certificates.
